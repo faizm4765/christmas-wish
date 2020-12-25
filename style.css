@@ -1,0 +1,90 @@
+body{
+    background: #333;
+    padding-top: 150px;
+}
+
+.present{
+    width: 420px;
+    margin: 0 auto;
+}
+
+.lid, .box{
+
+    background: 
+        -webkit-radial-gradient(white 15%,transparent 15.1%),
+        -webkit-radial-gradient(white 15%,transparent 15.1%),
+    rgb(240,58,58);
+
+    background-position: 0 0 , 25px 25px;
+    background-size: 50px 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.lid{
+    width: 410px;
+    height: 70px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0px 2px;
+    background-color: rgba(216,52,52);  
+    top:0px;
+    left: 0px;
+    transition: top ease-out 0.5s, left ease-out 0.5s, transform ease-out 0.5s;
+}
+
+.box{
+    width: 410px;
+    height: 250px;
+}
+
+
+.box span, .lid span{
+    background: rgba(235,199,0,0.8);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+    position: absolute;
+    display: block;
+}
+
+.box span:first-child{
+    width: 100%;
+    height: 60px;
+    top: 80px;
+}
+
+.box span:last-child, .lid span{
+    width: 60px;
+    height: 100%;
+    left: 180px;
+}
+
+.lid span{
+    left: 182px;
+}
+
+.wish{
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    margin: 0;
+    height: 0px;
+    top: 10px;
+    transition: all ease-out 0.7s;
+}
+
+.wish h2{
+    margin: 0%;
+}
+
+.present:hover .lid{
+    top:-100px;
+    transform: rotateZ(10deg);
+    left: 10px;
+}
+
+.present:hover .wish{
+    top: -80px;
+}
+
+
